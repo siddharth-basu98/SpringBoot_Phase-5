@@ -19,7 +19,7 @@ public class WelcomeRestController {
 		
 	@GetMapping("/admins")
 	public String returnAdmin() {
-		return "Name: Siddharth. Contact: siddharthbasu98@gmail.com" ;
+		return "Name: Siddharth. Contact: siddharth.basu98@yahoo.co.in" ;
 	}
 	
 }	
