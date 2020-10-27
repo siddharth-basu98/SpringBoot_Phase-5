@@ -20,7 +20,7 @@ public class WelcomeRestController {
 
 	@GetMapping("/getInfoAdmin")
 	public String returnAdmin() {
-		return "Username: admin \n Password: admin \n Name: Siddharth Bsu \n Occupation: Student \n Contact: +91-8802224343";
+		return "Username: admin \n Password: admin \n Name: Siddharth Bsu \n Occupation: DevOps trainee \n Contact: +91-8802224343";
 	}
 
 }
