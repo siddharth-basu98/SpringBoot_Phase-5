@@ -12,14 +12,15 @@ import io.swagger.annotations.ApiOperation;
 public class WelcomeRestController {
 
 	@ApiOperation(value = "Get Welcome Message For The Given Name ", response = String.class, tags = "getWelcomeNote")
-	@GetMapping("/welcome/{name}")
+	@GetMapping("/greetUser/{name}")
 	public String welcome(@PathVariable("name") String name) {
-		return "Welcome to Sporty Shoes !" + name;
+		return "Hello this is a new Application called Greeter. It just welcomes you to the website. Something like Wecome to XYZ.com ! "
+				+ name;
 	}
-		
-	@GetMapping("/admins")
+
+	@GetMapping("/getInfoAdmin")
 	public String returnAdmin() {
-		return "Name: Siddharth. Contact: siddharth.basu98@yahoo.co.in" ;
+		return "Username: admin \n Password: admin \n Name: Siddharth Bsu \n Occupation: Student \n Contact: +91-8802224343";
 	}
-	
-}	
+
+}
